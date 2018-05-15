@@ -1,0 +1,92 @@
+<style type="text/css">
+			table, tr, td,th {
+				border: 1px solid red;
+
+			}
+
+			th {
+				color: blue;
+			}
+
+			nav {
+				height: 80px;
+				border: 1px solid red;
+				background-color: black;
+				color: white;
+			}
+			nav ul li {
+				display: inline;
+			}
+			nav ul {
+				float: right;
+			}
+			nav ul li a{
+				color: white;
+				text-decoration: none;
+				padding: 28px 17px 28px 17px;
+			}
+
+			nav ul li a:hover {
+				color: green;
+			}
+
+			.wrapper {
+		        /* border: 2px solid green; */
+		        width: 1280px;
+		        margin: 0px auto;
+		      }
+		      #one {
+		      	text-align: center;
+		      	height: 440px;
+		      	background-color: green;
+		      	padding-top: 90px;
+		      }
+		      .welcome {
+		      	text-decoration: none;
+		      	font-size: 28px;
+		      	text-transform: uppercase;
+		      	color: blue;
+		      	background-color: grey;
+		      	padding: 20px 20px 20px 20px;
+		      	border-radius: 30px;
+		      }
+		      .welcome:hover {
+		      	color: red;
+		      }
+		      #one ul li {
+		      	display: block;
+		      }
+		      .my {
+		      		text-decoration: none;
+		      		font-size: 28px;
+		      		padding: 20px 20px 20px 20px;
+		      		background-color: grey;
+		      		border-radius: 40px;
+		      }
+		      .my:hover {
+		      	color: blue;
+		      }
+		      .cl {
+		      	padding-top: 80px;
+		      }
+		      .demo {
+		      		background: rgb(157,213,245);
+       				background: radial-gradient(circle, rgba(157,213,245,1) 0%, rgba(91,195,255,1) 100%);
+		      }
+		      footer h2{
+		      	margin: 0px;
+		      }
+		      .sone {
+		      		font-weight: bold;
+		      		font-size: 20px;
+		      }
+		      .stwo {
+		      		background-color: red;
+		      		text-transform: uppercase;
+		      }
+		      .sthree {
+		      	color: green;
+		      	font-weight: bold;
+		      	text-transform: uppercase;
+		      }
+		</style>

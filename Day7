@@ -1,0 +1,142 @@
+console.log("vaishnavi");
+console.log(3-4-20);
+
+//VARIABLE
+var x = 35;
+var y = 35.33;
+var z = "sakhi";
+var w = true;
+
+console.log(x,y,z,w);
+
+/*loosey typed languages
+ python, javascript, php
+ 
+ Strongly type languages
+ c , c# ,c++
+*/
+
+var p = [1,2,3,4,5];
+console.log(p,p[0]);
+
+var d = {
+  "name":"vaishnavi",
+  "age":15,
+  "courses": [
+    "MAD321",
+    "MAD432",
+    "MAD435"
+    
+    ]
+  
+}
+console.log(d.name);
+console.log(d.courses[0]);
+var d1 = {
+  "name":"vaishnavi",
+  "age":15,
+  "friend": {
+    "name":"sakhi",
+    "age":40
+          }
+  
+}
+console.log(d1.friend.name);
+
+
+
+
+var d = {
+  "name":"pritesh",
+  "id" : "C093491",
+  "friend": {
+    "name": "marcos",
+    "pets": ["dog", "cat"],
+    "grades" : {
+      "4114":"A+",
+      "4124":"C-"
+    }
+  },
+  "food": {
+    "pizza": {
+      "1":"tomatos",
+      "2":"chicken",
+      "3":"salad"
+    },
+    "brunch":[83, 23, 14, 55]
+  }
+}
+console.log(d.food.brunch[2]);
+console.log(d.friend.pets[1]);
+console.log(d.friend.grades[4124]);
+console.log(d.food.pizza[3]);
+
+var x = d.friend.grades[4114];
+var y = d.friend.grades[4124];
+if(x == 'A+' || y == 'C-'){
+
+  var n1 = 90;
+  var n2 = 65;
+  var n3 = (90+65)/2;
+  console.log("Final GPA:"+n3);
+}
+/*Write code to output 14 to the screen
+
+
+Write code to marcos’ 4124 mark to the screen
+
+
+
+Write code to output salad to the screen
+
+
+Write code to calculate marco’s gpa
+A+ = 90%
+C- = 65%
+*/
+
+
+var p = ["pikachu","squirtle","ash"];
+var count = 0;
+while(count<p.length){
+  console.log("goodbye"+p[count]);
+  count++;
+}
+
+
+
+for(var i = 0;i<p.length;i++){
+  console.log(p[i]);
+}
+
+//FOR EACH
+p.forEach(function(x1){
+  console.log("x1");
+});
+
+/*
+___dictionaryname___.forEach(function(NAME OF TEMPORARY VARIABLE){
+  
+});
+/**************/
+
+
+//FUNCTIONS
+
+function hello(){
+    return "hello sakhi";
+}
+function nonsense(){
+  console.log("bakwas");
+  console.log("boba-gem");
+  console.log("voh lay");
+}
+
+function add(a,b){
+  console.log(a+b);
+}
+
+add(8,6);
+var s=hello();
+console.log(s);
+nonsense();

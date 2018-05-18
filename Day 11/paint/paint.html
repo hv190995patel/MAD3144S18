@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Canvas Paint</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <style type="text/css">
+        canvas {
+          border: 1px solid red;
+        }
+        button#pink {
+          background-color: #D81B60;
+          border-color: #FFEB3B;
+        }
+        button#yellow {
+          background-color: yellow;
+          border-color: #FFEB3B;
+        }
+        button#blue {
+          background-color: blue;
+          border-color: #FFEB3B;
+        }
+        i.fa-paint-brush {
+          color: white;
+        }
+        h1 {
+          text-align: center;
+          margin-top: 40px;
+          margin-bottom: 20px;
+        }
+        div#controls {
+          /* border: 1px solid blue; */
+          width: 960px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        div#drawingArea {
+          width: 960px;
+          margin: 0 auto;
+          text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Let's Paint</h1>
+    <div id="controls">
+      <button id="newDrawing" class="btn btn-action"><i class="far fa-file-alt"></i></button>
+      <button id="erase" class="btn btn-action"><i class="fas fa-eraser"></i></button>
+      <button id="blue" class="btn btn-action"><i class="fas fa-paint-brush"></i></button>
+      <button id="pink" class="btn btn-action"><i class="fas fa-paint-brush"></i></button>
+      <button id="yellow" class="btn btn-action"><i class="fas fa-paint-brush"></i></button>
+      <p>
+        Brush Size:
+        <input id="slider" type="range" min="2" max="15" step="1">
+        <span id="brushSize"></span>
+      </p>
+    </div>
+    <div id="drawingArea">
+          <canvas id="main" width="960" height="500"></canvas>
+    </div>
+      <script src="index.js"></script>
+  </body>
+</html>

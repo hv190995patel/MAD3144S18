@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Storage</title>
+</head>
+<body>
+	<h1>Show Students!</h1>
+
+	<div id="info">
+		
+	</div>
+	<a href="localstorage.html">Go Back</a>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		//1. Get Stuff From Database
+			var name = localStorage.getItem("name");
+			var id = localStorage.getItem("id");
+			var program = localStorage.getItem("program");
+		//2. Put stuff in webpage
+		$("#info").append(
+			"<p> Student Name: " + name +"</p>"
+			+ "<p> StudentID: " + id +"</p>"
+			+"<p> Program: " + program +"</p>"
+		);
+			console.log("name = " + name);
+			console.log("studebt ID = " + id);
+			console.log("program = " + program);
+	</script>
+</body>
+</html>

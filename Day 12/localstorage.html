@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Storage</title>
+</head>
+<body>
+	<h1>Local Storage Example!</h1>
+
+	<label for="name">What's Your Name?</label>
+	<input type="text" id="name"><br>
+
+	<label for="name">What's Your ID?</label>
+	<input type="text" id="studentID"><br>
+
+	<label for="name">What's Your Program?</label>
+	<input type="text" class="program"><br>
+
+	<button id="go">Save</button>
+	<a href="next.html" id="show">Show Database</a>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		//Jquery And Local Storage are not realted with each other
+		$("#go").click(function() {
+			var x = $("input#name").val();
+			var y = $("input#studentID").val();
+			var z = $("input.program").val();
+			
+			localStorage.setItem("name", x);
+			localStorage.setItem("id", y);
+			localStorage.setItem("program", z);
+
+			alert("saved");
+
+			$("input#name").val("");
+			$("input#studentID").val("");
+			$("input#program").val("");
+		});
+
+		$("#show").click(function() {
+			var m = localStorage.getItem("name");
+			alert(m);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 11</title>
+	<style type="text/css">
+		.banana {
+			display: none;
+		}
+		ul {
+			/*display: none;*/
+		}
+	</style>
+</head>
+<body>
+	<h1>Fade Effects</h1>
+	<img src="images/eggplant.png" id="eggplant">
+	<img src="images/banana.png" class="banana">
+	<img src="images/carrot.png" class="banana">
+	<img src="images/watermelon.png" class="banana">
+
+	<h2>Sliding Effects</h2>
+	<button id="hide">Hide The Button</button>
+	<ul id="fruits"> 	
+		<li>
+				EggPlant
+			</li>
+		<li>Banana</li>
+		<li>Carrot</li>
+		<li>Watermelon</li>
+	</ul>
+
+	<h2>Click Click Example</h2>
+	<button id="abc">ABC ABC</button>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		// // javascript Code
+		
+		//Fadding Effects
+
+		$("#eggplant") .fadeOut(3000);
+		$(".banana") .fadeOut(3000);
+		$("#eggplant") .fadeIn(3000);
+		$(".banana") .fadeIn(3000);
+
+		//Sliding Effects
+		// $(".banana") .slideDown(3000);
+		// $("#fruits") .slideDown(4000);
+		// $("#fruits") .slideUp(4000);
+
+		//Clicks
+		$("#abc").click( function() {
+			alert("Hello");
+		});
+
+		// $("#hide").click(function() {
+		// 	$('#fruits').hide();
+		// });
+
+		
+
+		$("#hide").click(function() {
+			$("#fruits").append("<li><a href='facebook.com'>MANGO</a></li>");
+			$("#fruits li").append("<i class ='fas fa-check'></i> Done");
+		});
+	</script>
+</body>
+</html>
